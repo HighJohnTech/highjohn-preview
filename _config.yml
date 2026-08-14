@@ -1,0 +1,9 @@
+url: "https://highjohntech.github.io"
+baseurl: "/highjohn-preview"
+
+exclude:
+  - README.md
+  - README-PHASE-1A.md
+  - README-PHASE-1B.md
+  - README-PHASE-1C.md
+  - README-ZORTEZ.md
