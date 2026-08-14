@@ -1,0 +1,69 @@
+---
+layout: default
+title: "Contact | High John Tech"
+description: "Reach High John Tech directly, or book a Systems Audit to get started."
+permalink: /contact/
+---
+
+<section class="contact-sec" id="contact">
+  <div class="wrap">
+    <span class="sec-kicker mono rv">Contact</span>
+    <h2 class="rv d1">Reach out directly.</h2>
+    <p class="lead rv d2">Or skip straight to booking a call using the button below.</p>
+    <div class="contact-grid rv d2">
+      <div class="contact-card">
+        <span class="mono">Phone</span>
+        <a href="tel:{{ site.data.company.phone_e164 }}">{{ site.data.company.phone_display }}</a>
+      </div>
+      <div class="contact-card">
+        <span class="mono">Email</span>
+        <a href="mailto:{{ site.data.company.email }}">{{ site.data.company.email }}</a>
+      </div>
+      <div class="contact-card">
+        <span class="mono">Based in</span>
+        <span style="font-size:15px;color:var(--paper);">{{ site.data.company.location_display }}</span>
+        <small style="display:block;margin-top:6px;color:var(--ti);font-size:12px;">{{ site.data.company.location_note }}</small>
+      </div>
+      <div class="contact-card" style="grid-column:1/-1;">
+        <span class="mono">Follow</span>
+        <div style="display:flex;gap:18px;flex-wrap:wrap;">
+          <a href="{{ site.data.social.instagram }}" target="_blank" rel="noopener" style="font-size:14px;">Instagram</a>
+          <a href="{{ site.data.social.facebook }}" target="_blank" rel="noopener" style="font-size:14px;">Facebook</a>
+          <a href="{{ site.data.social.linkedin }}" target="_blank" rel="noopener" style="font-size:14px;">LinkedIn</a>
+          <a href="{{ site.data.social.x }}" target="_blank" rel="noopener" style="font-size:14px;">X</a>
+          <a href="{{ site.data.social.youtube }}" target="_blank" rel="noopener" style="font-size:14px;">YouTube</a>
+          <a href="{{ site.data.social.vimeo }}" target="_blank" rel="noopener" style="font-size:14px;">Vimeo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="difference">
+  <div class="wrap">
+    <span class="sec-kicker mono rv">Not sure where to start?</span>
+    <h2 class="rv d1">Tell us what's actually going on — we'll point you the right direction.</h2>
+    <div class="diff-grid rv d2">
+      <div class="diff-card">
+        <h3>Have a specific problem</h3>
+        <p style="color:var(--ti);font-size:14px;">Missed calls, a slow website, no follow-up system — start with the <a href="{{ '/#standalone' | relative_url }}" style="color:var(--cyan);">standalone services</a> to find the closest match.</p>
+      </div>
+      <div class="diff-card">
+        <h3>Want a diagnosis first</h3>
+        <p style="color:var(--ti);font-size:14px;">Not sure what's actually broken yet — start with the <a href="{{ '/systems-audit/' | relative_url }}" style="color:var(--cyan);">Systems Audit</a>.</p>
+      </div>
+      <div class="diff-card">
+        <h3>Ready for the full build</h3>
+        <p style="color:var(--ti);font-size:14px;">Know you need the whole operating system — book a call directly below.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="book-contact">
+  <div class="wrap">
+    <span class="sec-kicker mono rv">Or just book it</span>
+    <h2 class="rv d1">Skip the back-and-forth.</h2>
+    {% include cta-book.html label="Book a Systems Audit" service="Systems Audit" extra_class="rv d2" %}
+  </div>
+</section>
