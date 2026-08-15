@@ -1,6 +1,6 @@
 - id: ai-consulting
   slug: "ai-consulting"
-  page_live: false
+  page_live: true
   name: "AI consulting &amp; strategy"
   blurb: "Business AI assessments, architecture, implementation planning, and hands-on mentorship for founders and teams who want to use AI effectively — not an online guru course."
   cta_label: "→ Discuss AI Consulting"
@@ -40,7 +40,7 @@
 
 - id: cybersecurity
   slug: "cybersecurity"
-  page_live: false
+  page_live: true
   name: "Cybersecurity &amp; secure infrastructure"
   blurb: "Security-conscious system architecture, access controls, identity and permissions, secure implementation, and technology risk identification — built in from day one, not bolted on."
   cta_label: "→ Discuss Security"
@@ -48,7 +48,7 @@
 
 - id: marketing-revenue-systems
   slug: "marketing-revenue-systems"
-  page_live: false
+  page_live: true
   name: "Marketing &amp; revenue systems"
   blurb: "The technology underneath marketing: funnels, lead capture, customer journeys, landing pages, and campaign infrastructure. We architect the system, not the ad copy."
   cta_label: "→ Discuss Revenue Systems"
@@ -56,7 +56,7 @@
 
 - id: technology-partnership
   slug: "technology-partnership"
-  page_live: false
+  page_live: true
   name: "Ongoing technology partnership"
   blurb: "System optimization, infrastructure improvement, business intelligence, and fractional technology leadership for businesses that want a standing partner, not a one-time project."
   cta_label: "→ Discuss a Partnership"

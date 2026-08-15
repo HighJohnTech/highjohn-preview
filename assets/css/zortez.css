@@ -74,6 +74,14 @@
 .zortez-welcome h3{font-family:'Unbounded',sans-serif;font-weight:600;font-size:16px;margin-bottom:8px;}
 .zortez-welcome p{color:var(--ti);font-size:13px;line-height:1.5;}
 
+.zortez-voice-btn{display:inline-flex;align-items:center;gap:6px;margin-top:10px;
+  background:rgba(0,206,209,0.08);border:1px solid rgba(0,206,209,0.22);border-radius:999px;
+  padding:6px 14px;color:var(--cyan);font-family:'IBM Plex Mono',monospace;font-size:11px;
+  letter-spacing:0.04em;text-transform:uppercase;cursor:pointer;transition:background .16s ease,border-color .16s ease;}
+.zortez-voice-btn:hover{background:rgba(0,206,209,0.16);border-color:var(--cyan);}
+.zortez-voice-btn.is-playing{color:var(--lime);border-color:rgba(173,255,47,0.35);background:rgba(173,255,47,0.08);}
+.zortez-voice-icon{font-size:13px;}
+
 .zortez-intents{display:flex;flex-direction:column;gap:8px;}
 .zortez-intents-secondary{margin-top:8px;}
 .zortez-intents-secondary[hidden]{display:none;}

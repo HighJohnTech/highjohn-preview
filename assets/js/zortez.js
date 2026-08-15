@@ -19,6 +19,8 @@
   var moreList   = document.getElementById('zortez-intents-secondary');
   var video      = panel.querySelector('.zortez-frame-video');
   var poster     = panel.querySelector('.zortez-frame-poster');
+  var voiceBtn   = document.getElementById('zortez-voice-btn');
+  var voiceAudio = document.getElementById('zortez-voice-audio');
 
   var isHome       = root.getAttribute('data-is-home') === 'true';
   var cooldownDays = parseInt(root.getAttribute('data-cooldown-days'), 10) || 7;
@@ -149,6 +151,16 @@
     launcher.setAttribute('aria-expanded', 'false');
     clearTimeout(autoCollapseTimer);
     pauseVideo();
+    if(voiceAudio && !voiceAudio.paused){
+      voiceAudio.pause();
+      voiceAudio.currentTime = 0;
+    }
+    if(voiceBtn){
+      voiceBtn.classList.remove('is-playing');
+      voiceBtn.setAttribute('aria-pressed', 'false');
+      var vLabel = voiceBtn.querySelector('.zortez-voice-label');
+      if(vLabel) vLabel.textContent = 'Hear Zortez';
+    }
     markSeen();
     track(reason === 'minimize' ? 'minimize' : 'close');
     setTimeout(function(){ panel.hidden = true; }, 320); // matches CSS transition duration
@@ -181,6 +193,41 @@
       track('intent_selected', { intent: e.currentTarget.getAttribute('data-zortez-intent') });
       markSeen(); // choosing a destination counts as "seen" — don't re-greet on the next page
     });
+  }
+
+  /* ---------- Voice / speaker control ----------
+     No autoplay, ever — only plays after an explicit tap. If the MP3 doesn't
+     exist yet (or fails to load for any reason), this fails silently: the
+     button just returns to its default state, nothing breaks, nothing errors
+     visibly. Same button re-used to stop/replay. */
+  if(voiceBtn && voiceAudio){
+    var voiceLabel = voiceBtn.querySelector('.zortez-voice-label');
+
+    function setVoicePlaying(isPlaying){
+      voiceBtn.classList.toggle('is-playing', isPlaying);
+      voiceBtn.setAttribute('aria-pressed', String(isPlaying));
+      if(voiceLabel) voiceLabel.textContent = isPlaying ? 'Stop' : 'Hear Zortez';
+    }
+
+    voiceBtn.addEventListener('click', function(){
+      if(!voiceAudio.paused){
+        voiceAudio.pause();
+        voiceAudio.currentTime = 0;
+        setVoicePlaying(false);
+        return;
+      }
+      voiceAudio.play().then(function(){
+        setVoicePlaying(true);
+        track('voice_play');
+      }).catch(function(){
+        /* missing file, decode error, blocked — button just stays "Hear Zortez".
+           Character/video continue working normally regardless. */
+        setVoicePlaying(false);
+      });
+    });
+
+    voiceAudio.addEventListener('ended', function(){ setVoicePlaying(false); });
+    voiceAudio.addEventListener('error', function(){ setVoicePlaying(false); });
   }
 
   /* ---------- Reveal launcher (only once JS has actually run successfully) ---------- */

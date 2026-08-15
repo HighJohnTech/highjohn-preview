@@ -26,14 +26,7 @@ permalink: /contact/
       </div>
       <div class="contact-card" style="grid-column:1/-1;">
         <span class="mono">Follow</span>
-        <div style="display:flex;gap:18px;flex-wrap:wrap;">
-          <a href="{{ site.data.social.instagram }}" target="_blank" rel="noopener" style="font-size:14px;">Instagram</a>
-          <a href="{{ site.data.social.facebook }}" target="_blank" rel="noopener" style="font-size:14px;">Facebook</a>
-          <a href="{{ site.data.social.linkedin }}" target="_blank" rel="noopener" style="font-size:14px;">LinkedIn</a>
-          <a href="{{ site.data.social.x }}" target="_blank" rel="noopener" style="font-size:14px;">X</a>
-          <a href="{{ site.data.social.youtube }}" target="_blank" rel="noopener" style="font-size:14px;">YouTube</a>
-          <a href="{{ site.data.social.vimeo }}" target="_blank" rel="noopener" style="font-size:14px;">Vimeo</a>
-        </div>
+        {% include social-links.html %}
       </div>
     </div>
   </div>
@@ -46,7 +39,7 @@ permalink: /contact/
     <div class="diff-grid rv d2">
       <div class="diff-card">
         <h3>Have a specific problem</h3>
-        <p style="color:var(--ti);font-size:14px;">Missed calls, a slow website, no follow-up system — start with the <a href="{{ '/#standalone' | relative_url }}" style="color:var(--cyan);">standalone services</a> to find the closest match.</p>
+        <p style="color:var(--ti);font-size:14px;">Missed calls, a slow website, no follow-up system — start with the <a href="{{ '/services/' | relative_url }}" style="color:var(--cyan);">services overview</a> to find the closest match.</p>
       </div>
       <div class="diff-card">
         <h3>Want a diagnosis first</h3>

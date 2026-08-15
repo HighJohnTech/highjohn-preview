@@ -297,6 +297,11 @@ nav .bar{display:flex;align-items:center;justify-content:space-between;height:60
 
 footer{border-top:1px solid rgba(154,160,184,0.14);padding:30px 0;background:var(--deep);}footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--ti-dim);}
 
+.social-links{display:flex;gap:16px;flex-wrap:wrap;}
+.social-links a{color:var(--ti);text-decoration:none;font-family:'IBM Plex Mono',monospace;
+  font-size:11px;letter-spacing:0.06em;text-transform:uppercase;transition:color .16s ease;}
+.social-links a:hover{color:var(--cyan);}
+
 @media(min-width:860px){
   .founder .grid{grid-template-columns:1.4fr 1fr;align-items:center;}
   .scard{padding:44px 40px 48px;}

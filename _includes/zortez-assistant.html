@@ -45,6 +45,15 @@
     <div class="zortez-welcome">
       <h3 id="zortez-welcome-heading">{{ z.welcome_heading }}</h3>
       <p>{{ z.welcome_body }}</p>
+      {% if z.voice_enabled %}
+      <button type="button" class="zortez-voice-btn" id="zortez-voice-btn" aria-label="Hear Zortez" aria-pressed="false">
+        <span class="zortez-voice-icon" aria-hidden="true">&#128266;</span>
+        <span class="zortez-voice-label">Hear Zortez</span>
+      </button>
+      <audio id="zortez-voice-audio" preload="none">
+        <source src="{{ z.media.voice_mp3 | relative_url }}" type="audio/mpeg">
+      </audio>
+      {% endif %}
     </div>
 
     <div class="zortez-intents zortez-intents-primary">
