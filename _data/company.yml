@@ -11,3 +11,8 @@ state: "MI"
 location_display: "Belleville, MI — serving clients worldwide"
 location_note: "No public physical location; services are provided remotely and by appointment."
 booking_url: "https://book.highjohn.tech/widget/booking/on6HOcnXxpUKayxQD05e"
+
+# Free 15-minute Technology Fit Call booking URL.
+# This is intentionally separate from booking_url, which is the paid Systems Audit.
+# Every Fit Call CTA reads from this single field.
+fit_call_url: "https://book.highjohn.tech/widget/booking/hAXOCF1ZJRTUbCYeTSmk"

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Contact | High John Tech"
-description: "Reach High John Tech directly, or book a Systems Audit to get started."
+description: "Reach High John Tech directly, book a free 15-minute Technology Fit Call, or book a Systems Audit."
 permalink: /contact/
 ---
 
@@ -9,8 +9,13 @@ permalink: /contact/
   <div class="wrap">
     <span class="sec-kicker mono rv">Contact</span>
     <h2 class="rv d1">Reach out directly.</h2>
-    <p class="lead rv d2">Or skip straight to booking a call using the button below.</p>
+    <p class="lead rv d2">Not sure where to start? Use a free 15-minute Technology Fit Call to show us what you're trying to improve — we'll tell you whether HJT is a fit and point you to the right next step. Ready to skip straight to a real diagnosis? Book the Systems Audit below.</p>
     <div class="contact-grid rv d2">
+      <div class="contact-card" style="grid-column:1/-1;background:rgba(0,206,209,0.05);border-color:rgba(0,206,209,0.25);">
+        <span class="mono" style="color:var(--cyan);">Not sure where to start?</span>
+        <span style="font-size:15px;color:var(--paper);display:block;margin:6px 0 14px;">A free 15-minute call to understand the problem and point you to the right next step — not a free audit, not free consulting.</span>
+        {% include fit-call-cta.html label="Book a Free 15-Min Fit Call" %}
+      </div>
       <div class="contact-card">
         <span class="mono">Phone</span>
         <a href="tel:{{ site.data.company.phone_e164 }}">{{ site.data.company.phone_display }}</a>
