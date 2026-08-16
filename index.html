@@ -129,9 +129,12 @@ description: "High John Tech architects AI agents, automation, CRM, and digital 
     <h2 class="rv d1">Proof before promises.</h2>
     <p class="lead rv d2">Client work, demonstrations, and experiments are labeled clearly so you can see what has actually been built.</p>
     <div class="ind-grid home-work-grid">
-      <div class="ind-card"><span class="work-type">Client work</span><h3>SB Trust &amp; Legal Consultants</h3><p>Business automation infrastructure built and maintained on an ongoing basis.</p></div>
-      <div class="ind-card"><span class="work-type">Client work</span><h3>Kouncil Place</h3><p>Digital infrastructure supporting a nonprofit mental-health ecosystem.</p></div>
-      <div class="ind-card"><span class="work-type demo">HJT demo</span><h3>AI Front Desk</h3><p>A working demonstration of call handling, qualification, CRM routing, and follow-up.</p></div>
+      {% assign sbtlc = site.data.work.client_work | where: "id", "sbtlc" | first %}
+      {% assign workonyou = site.data.work.client_work | where: "id", "workonyou" | first %}
+      {% assign afd = site.data.work.demos | where: "id", "ai-front-desk" | first %}
+      <div class="ind-card home-work-card"><div class="home-work-thumb"><span>Screenshot pending</span></div><span class="work-type">Client work</span><h3>{{ sbtlc.name }}</h3><p>{{ sbtlc.homepage_description }}</p></div>
+      <div class="ind-card home-work-card"><div class="home-work-thumb"><span>Screenshot pending</span></div><span class="work-type">Client work</span><h3>{{ workonyou.name }}</h3><p>{{ workonyou.homepage_description }}</p></div>
+      <div class="ind-card home-work-card"><div class="home-work-thumb"><span>Screenshot pending</span></div><span class="work-type demo">HJT demo</span><h3>{{ afd.name }}</h3><p>{{ afd.homepage_description }}</p></div>
     </div>
     <a class="section-route" href="{{ '/work/' | relative_url }}">See all work <span>→</span></a>
   </div>

@@ -59,6 +59,8 @@
     arcSet(cx,cy,R*0.58,12,0.16,-rot*0.9,1.5*dpr,'#565C78',0.5);
     /* inner ticks */
     ticks(cx,cy,R*0.44,R*0.48,36,rot*1.2,'#00CED1',0.35,1*dpr);
+    /* violet signal arc */
+    arcSet(cx,cy,R*0.50,2,2.2,-rot*1.4,2*dpr,'#9D5CFF',0.65);
     /* lime pin arc */
     arcSet(cx,cy,R*0.36,1,5.6,rot*2.2,2.5*dpr,'#ADFF2F',0.9);
     /* hub */
