@@ -1,4 +1,4 @@
-# Confirmed High John Technology business contact details — updated 2026-09-09.
+# Confirmed High John Technology business contact and booking details — updated 2026-09-09.
 # High John Tech is based in Belleville, Michigan and does not maintain a
 # public walk-in office. Services are provided remotely and by appointment.
 
@@ -11,10 +11,10 @@ state: "MI"
 location_display: "Belleville, MI — serving clients worldwide"
 location_note: "No public physical location; services are provided remotely and by appointment."
 
-# Paid fixed-price booking destination. Keep separate from the free fit call.
-# Replace this GHL URL with the new Systems Recon booking link before production launch.
-booking_url: "https://book.highjohn.tech/widget/booking/on6HOcnXxpUKayxQD05e"
-
-# Free 15-minute Technology Fit Call booking URL.
-# Used for general discovery/discussion calls and custom-scoped services.
+# Free 15-minute Technology Fit Call — Google Calendar.
 fit_call_url: "https://calendar.app.google/57XYtBPGPNvwrPMB9"
+
+# Paid HJT offer booking pages — Cal.com.
+# Stripe payment enforcement will be connected inside Cal.com after Stripe account verification is restored.
+discovery_call_url: "https://cal.com/cortaz-calhoun-hhj2xi/discovery-call"
+full_ai_audit_url: "https://cal.com/cortaz-calhoun-hhj2xi/full-ai-audit"
