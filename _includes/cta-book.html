@@ -1,5 +1,7 @@
 {% assign booking_href = site.data.company.fit_call_url %}
-{% if include.service == "Systems Audit" %}
-  {% assign booking_href = site.data.company.booking_url %}
+{% if include.service == "Discovery Call" or include.service == "Systems Audit" %}
+  {% assign booking_href = site.data.company.discovery_call_url %}
+{% elsif include.service == "Full AI Audit" or include.service == "AI Systems Blueprint" %}
+  {% assign booking_href = site.data.company.full_ai_audit_url %}
 {% endif %}
-<a class="{{ include.class | default: 'btn-key' }}{% if include.extra_class %} {{ include.extra_class }}{% endif %}" href="{{ booking_href }}">{% if include.icon != false %}<span class="k" aria-hidden="true"></span>{% endif %}{{ include.label | default: "Book a Systems Audit" }}</a>
+<a class="{{ include.class | default: 'btn-key' }}{% if include.extra_class %} {{ include.extra_class }}{% endif %}" href="{{ booking_href }}">{% if include.icon != false %}<span class="k" aria-hidden="true"></span>{% endif %}{{ include.label | default: "Book a Discovery Call — $222" }}</a>
