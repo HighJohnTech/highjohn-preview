@@ -33,7 +33,7 @@ primary_intents:
 secondary_intents:
   - label: "I'm not sure what I need"
     href: "/systems-audit/"
-    event: "systems_recon"
+    event: "discovery_call"
   - label: "Show me HJT proof"
     href: "/work/"
     event: "work"
