@@ -10,6 +10,7 @@
     <div class="footer-col">
       <span class="footer-heading mono">Navigation</span>
       <a href="{{ '/services/' | relative_url }}">Services</a>
+      <a href="{{ '/insights/' | relative_url }}">Insights</a>
       <a href="{{ '/work/' | relative_url }}">Work</a>
       <a href="{{ '/shop/' | relative_url }}">Shop</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
@@ -18,9 +19,9 @@
 
     <div class="footer-col">
       <span class="footer-heading mono">Get Started</span>
-      {% include fit-call-cta.html class="footer-link-cta" label="Free 15-Min Fit Call" icon=false %}
-      {% include cta-book.html class="footer-link-cta footer-link-cta--primary" label="Discovery Call — $222" service="Discovery Call" icon=false %}
-      {% include cta-book.html class="footer-link-cta" label="Full AI Audit — $1,500" service="Full AI Audit" icon=false %}
+      {% include fit-call-cta.html class="footer-link-cta" label="Technology Fit Call" icon=false %}
+      <a class="footer-link-cta footer-link-cta--primary" href="{{ '/systems-audit/' | relative_url }}">Systems Architecture Assessment</a>
+      <a class="footer-link-cta" href="{{ '/red-team/' | relative_url }}">Authorized Red Team</a>
     </div>
 
     <div class="footer-col">
@@ -37,6 +38,6 @@
       <a href="{{ '/privacy-policy.html' | relative_url }}">Privacy Policy</a>
       <a href="{{ '/terms-and-conditions/' | relative_url }}">Terms &amp; Conditions</a>
     </span>
-    <span class="mono">Build once · Automate forever</span>
+    <span class="mono">Build · Secure · Automate</span>
   </div>
 </footer>
