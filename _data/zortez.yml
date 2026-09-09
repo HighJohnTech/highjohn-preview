@@ -2,7 +2,7 @@ enabled: true
 name: "Zortez"
 launcher_label: "Ask Zortez"
 welcome_heading: "Welcome to High John Technology."
-welcome_body: "I'm Zortez, your AI guide. What are you trying to improve?"
+welcome_body: "I'm Zortez, your AI guide. Where is revenue, reliability, risk, or security breaking down?"
 cooldown_days: 7
 voice_enabled: true
 
@@ -14,10 +14,13 @@ media:
   voice_mp3: "/assets/media/zortez/zortez-welcome.mp3"
 
 primary_intents:
-  - label: "I'm missing calls or leads"
-    href: "/services/ai-agents-front-desk/"
-    event: "ai_front_desk"
-  - label: "I need to automate my business"
+  - label: "Red Team my systems"
+    href: "/red-team/"
+    event: "red_team"
+  - label: "I'm losing leads or follow-up"
+    href: "/services/marketing-revenue-systems/"
+    event: "revenue_systems"
+  - label: "I need AI or automation"
     href: "/services/automation-crm/"
     event: "automation"
   - label: "I need a website"
@@ -30,8 +33,8 @@ primary_intents:
 secondary_intents:
   - label: "I'm not sure what I need"
     href: "/systems-audit/"
-    event: "systems_audit"
-  - label: "Show me what HJT builds"
+    event: "systems_recon"
+  - label: "Show me HJT proof"
     href: "/work/"
     event: "work"
   - label: "Explore all services"
