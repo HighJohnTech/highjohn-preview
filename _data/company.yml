@@ -10,9 +10,11 @@ city: "Belleville"
 state: "MI"
 location_display: "Belleville, MI — serving clients worldwide"
 location_note: "No public physical location; services are provided remotely and by appointment."
+
+# Paid fixed-price booking destination. Keep separate from the free fit call.
+# Replace this GHL URL with the new Systems Recon booking link before production launch.
 booking_url: "https://book.highjohn.tech/widget/booking/on6HOcnXxpUKayxQD05e"
 
 # Free 15-minute Technology Fit Call booking URL.
-# Temporary GHL booking URL remains until the Google Calendar booking page is created.
-# Replace both booking_url and fit_call_url with accessible scheduling links before production launch.
-fit_call_url: "https://book.highjohn.tech/widget/booking/hAXOCF1ZJRTUbCYeTSmk"
+# Used for general discovery/discussion calls and custom-scoped services.
+fit_call_url: "https://calendar.app.google/57XYtBPGPNvwrPMB9"
