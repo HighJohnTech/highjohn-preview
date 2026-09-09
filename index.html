@@ -1,180 +1,139 @@
 ---
 layout: default
-title: "High John Tech — Build Your AI Operating System"
-description: "High John Tech architects AI agents, automation, CRM, and digital infrastructure into connected AI operating systems built for growth. Based in Belleville, MI — serving businesses worldwide."
+title: "Security-Led AI Systems | High John Technology"
+description: "High John Technology designs and builds AI, automation, software, revenue systems, and digital infrastructure with security, reliability, and business outcomes built into the architecture."
 ---
 
 <section class="hero" id="home">
   <canvas id="aperture" aria-hidden="true"></canvas>
   <div class="wrap">
-    <span class="kicker mono rv">AI operating system architecture</span>
-    <h1 class="rv d1">Build your<span class="thin">AI operating system.</span></h1>
-    <p class="sub rv d2">High John Tech transforms disconnected tools, manual work, and missed opportunities into connected business systems built around how you actually operate.</p>
+    <span class="kicker mono rv">Security-led AI systems</span>
+    <h1 class="rv d1">Security-Led AI Systems<span class="thin">for businesses that can't afford fragile technology.</span></h1>
+    <p class="sub rv d2">High John Technology helps businesses deploy AI, automation, software, revenue systems, and digital infrastructure with security, reliability, and business outcomes built into the architecture.</p>
     <div class="cta-row rv d3">
-      {% include fit-call-cta.html class="btn-key" label="Book a Free 15-Min Technology Fit Call" %}
-      <a class="link-plain" href="{{ '/services/' | relative_url }}">Explore services</a>
+      {% include cta-book.html class="btn-key" label="Book a Recon Call" service="Systems Audit" %}
+      <a class="link-plain" href="{{ '/red-team/' | relative_url }}">See what we test</a>
     </div>
-    <p class="hero-alt-path rv d3">Already know what's broken? <a href="{{ site.data.company.booking_url }}?service=Systems%20Audit">Skip to the $222 Systems Audit →</a></p>
+    <p class="hero-alt-path rv d3">Already using AI or automation? <a href="{{ '/red-team/' | relative_url }}">Find out what happens when it stops behaving normally →</a></p>
   </div>
 </section>
 
 <div class="marquee" aria-hidden="true">
   <div class="marquee-track">
-    <span>AI strategy<i>·</i>Automation<i>·</i>AI front desk<i>·</i>Web &amp; apps<i>·</i>Cybersecurity<i>·</i>Revenue systems<i>·</i></span>
-    <span>AI strategy<i>·</i>Automation<i>·</i>AI front desk<i>·</i>Web &amp; apps<i>·</i>Cybersecurity<i>·</i>Revenue systems<i>·</i></span>
+    <span>AI systems<i>·</i>Revenue red team<i>·</i>Automation<i>·</i>Custom software<i>·</i>Cybersecurity<i>·</i>Secure infrastructure<i>·</i></span>
+    <span>AI systems<i>·</i>Revenue red team<i>·</i>Automation<i>·</i>Custom software<i>·</i>Cybersecurity<i>·</i>Secure infrastructure<i>·</i></span>
   </div>
 </div>
 
-<section class="home-problems">
+<section class="home-problems" id="what-we-find">
   <div class="wrap">
-    <span class="sec-kicker mono rv">The business problem</span>
-    <h2 class="rv d1">Your tools are not the system.</h2>
-    <p class="lead rv d2">Most businesses already have software. The loss happens in the gaps — where calls go unanswered, follow-up depends on memory, and information lives in separate places.</p>
+    <span class="sec-kicker mono rv">What we find</span>
+    <h2 class="rv d1">The problem is rarely just the tool.</h2>
+    <p class="lead rv d2">We look at the business through four lenses before deciding what should be built, fixed, secured, or left alone.</p>
     <div class="problem-grid">
-      <article class="problem-card">
-        <span class="problem-no mono">01</span>
-        <h3>Missed demand</h3>
-        <p>Calls, forms, and messages arrive faster than the business can respond.</p>
-      </article>
-      <article class="problem-card">
-        <span class="problem-no mono">02</span>
-        <h3>Manual operations</h3>
-        <p>People repeat work that should move automatically between systems.</p>
-      </article>
-      <article class="problem-card">
-        <span class="problem-no mono">03</span>
-        <h3>Disconnected intelligence</h3>
-        <p>Customer, process, and business knowledge is scattered instead of usable.</p>
-      </article>
+      <article class="problem-card"><span class="problem-no mono">01</span><h3>Revenue</h3><p>Missed calls, broken forms, slow response, weak routing, failed follow-up, booking friction, and customer handoff gaps.</p></article>
+      <article class="problem-card"><span class="problem-no mono">02</span><h3>Reliability</h3><p>Workflows that only succeed on the happy path, silent failures, bad retries, duplicate data, and fragile integrations.</p></article>
+      <article class="problem-card"><span class="problem-no mono">03</span><h3>Risk</h3><p>Unclear ownership, excessive dependency on one vendor or person, weak fallback paths, and poor recovery design.</p></article>
+      <article class="problem-card"><span class="problem-no mono">04</span><h3>Security</h3><p>Over-permissioned agents, exposed secrets, weak identity controls, unnecessary data access, and insecure integrations.</p></article>
     </div>
   </div>
 </section>
 
-<section class="leak-calc" id="leak-calc">
+<section class="standalone home-services" id="red-team">
   <div class="wrap">
-    <span class="sec-kicker mono rv">Run the numbers</span>
-    <h2 class="rv d1">What is a missed call actually costing you?</h2>
-    <p class="lead rv d2">Move the sliders. This isn't a pitch — it's your own math.</p>
-    <div class="calc-card rv d2">
-      <span class="calc-live mono">Live calculation</span>
-      <div class="calc-inputs">
-        <label for="calcTicket">Average job value
-          <div class="calc-row">
-            <input type="range" id="calcTicket" min="50" max="5000" step="50" value="500" aria-label="Average job value in dollars">
-            <span class="calc-val" id="calcTicketVal">$500</span>
-          </div>
-        </label>
-        <label for="calcMissed">Missed calls per week
-          <div class="calc-row">
-            <input type="range" id="calcMissed" min="0" max="50" step="1" value="8" aria-label="Missed calls per week">
-            <span class="calc-val" id="calcMissedVal">8</span>
-          </div>
-        </label>
-      </div>
-      <div class="calc-results">
-        <div class="calc-result">
-          <span class="calc-label">Weekly opportunity missed</span>
-          <span class="calc-num" id="calcWeekly">$4,000</span>
-        </div>
-        <div class="calc-result main">
-          <span class="calc-label">Recoverable annually with an AI Front Desk</span>
-          <span class="calc-num" id="calcAnnual">$62,400</span>
-        </div>
-      </div>
-      <p class="calc-note">Estimate assumes a 30% capture rate once every call gets an instant response — not every missed call would have closed anyway. Your real numbers depend on close rate and ticket size; the Systems Audit gets you the actual figure.</p>
-      <p class="calc-next">You found the leak. Now let's architect the fix.</p>
-      {% include cta-book.html label="Stop the leak" service="Systems Audit" %}
+    <span class="sec-kicker mono rv">HJT Red Team</span>
+    <h2 class="rv d1">Pressure-test the business before adding more technology.</h2>
+    <p class="lead rv d2">HJT uses two clearly separated forms of analysis. One focuses on observable revenue and customer-experience failures. The other is permissioned technical testing of systems you are authorized to assess.</p>
+    <div class="svc-grid home-svc-grid">
+      <a class="svc-card home-svc-card home-svc-card--cyan" href="{{ '/red-team/' | relative_url }}"><span class="home-svc-no">01</span><h3>Revenue Red Team</h3><p>Find where leads, calls, forms, routing, follow-up, quotes, booking, or handoffs quietly break. This is not penetration testing.</p><span class="svc-cta">Explore →</span></a>
+      <a class="svc-card home-svc-card home-svc-card--gold-cyan" href="{{ '/red-team/' | relative_url }}"><span class="home-svc-no">02</span><h3>Authorized AI / Systems Red Team</h3><p>Scoped testing of AI agents, permissions, APIs, workflows, fallback logic, identity, data boundaries, monitoring, and resilience.</p><span class="svc-cta">See scope rules →</span></a>
     </div>
+    <a class="section-route" href="{{ '/red-team/' | relative_url }}">See the HJT Red Team model <span>→</span></a>
   </div>
 </section>
 
 <section class="standalone home-services" id="what-we-build">
   <div class="wrap">
     <span class="sec-kicker mono rv">What we build</span>
-    <h2 class="rv d1">Start with one problem. Build toward one connected system.</h2>
-    <p class="lead rv d2">Each capability has its own page because each can be a complete engagement. The operating-system approach is how we make them work together when you need more.</p>
+    <h2 class="rv d1">Security is the discipline underneath the build — not a separate sticker.</h2>
+    <p class="lead rv d2">HJT remains a full AI and technology agency. We design the system first, choose the right tools second, and build security, failure handling, and business outcomes into the architecture.</p>
     <div class="svc-grid home-svc-grid">
-      <a class="svc-card home-svc-card home-svc-card--cyan" href="{{ '/services/ai-consulting/' | relative_url }}"><span class="home-svc-no">01</span><h3>AI consulting &amp; strategy</h3><p>Find where AI creates leverage before buying more tools.</p><span class="svc-cta">Explore →</span></a>
-      <a class="svc-card home-svc-card home-svc-card--cyan-lime" href="{{ '/services/ai-agents-front-desk/' | relative_url }}"><span class="home-svc-no">02</span><h3>AI agents &amp; front desk</h3><p>Answer, qualify, book, and route demand without waiting on a person.</p><span class="svc-cta">Explore →</span></a>
-      <a class="svc-card home-svc-card home-svc-card--lime" href="{{ '/services/automation-crm/' | relative_url }}"><span class="home-svc-no">03</span><h3>Automation &amp; CRM</h3><p>Move leads and work through the business without manual handoffs.</p><span class="svc-cta">Explore →</span></a>
-      <a class="svc-card home-svc-card home-svc-card--violet" href="{{ '/services/web-design-development/' | relative_url }}"><span class="home-svc-no">04</span><h3>Websites</h3><p>Build a digital front door that positions, captures, and routes demand.</p><span class="svc-cta">Explore →</span></a>
-      <a class="svc-card home-svc-card home-svc-card--violet-cyan" href="{{ '/services/custom-apps-software/' | relative_url }}"><span class="home-svc-no">05</span><h3>Custom software</h3><p>Build the tool when off-the-shelf software cannot solve the workflow.</p><span class="svc-cta">Explore →</span></a>
-      <a class="svc-card home-svc-card home-svc-card--gold-cyan" href="{{ '/services/cybersecurity/' | relative_url }}"><span class="home-svc-no">06</span><h3>Secure infrastructure</h3><p>Consider identity, access, and technology risk from the architecture stage.</p><span class="svc-cta">Explore →</span></a>
+      <a class="svc-card home-svc-card home-svc-card--cyan" href="{{ '/services/ai-consulting/' | relative_url }}"><span class="home-svc-no">01</span><h3>AI systems &amp; strategy</h3><p>Find where AI creates leverage, where it creates risk, and what is actually worth building.</p><span class="svc-cta">Explore →</span></a>
+      <a class="svc-card home-svc-card home-svc-card--cyan-lime" href="{{ '/services/ai-agents-front-desk/' | relative_url }}"><span class="home-svc-no">02</span><h3>AI agents &amp; front desk</h3><p>Customer-response and agent systems designed around clear permissions, handoffs, boundaries, and failure behavior.</p><span class="svc-cta">Explore →</span></a>
+      <a class="svc-card home-svc-card home-svc-card--lime" href="{{ '/services/automation-crm/' | relative_url }}"><span class="home-svc-no">03</span><h3>Automation &amp; CRM</h3><p>Move leads and work through the business with validation, ownership, logging, and recovery considered.</p><span class="svc-cta">Explore →</span></a>
+      <a class="svc-card home-svc-card home-svc-card--violet" href="{{ '/services/web-design-development/' | relative_url }}"><span class="home-svc-no">04</span><h3>Websites &amp; revenue systems</h3><p>Build a digital front door that positions, captures, routes, and protects customer demand.</p><span class="svc-cta">Explore →</span></a>
+      <a class="svc-card home-svc-card home-svc-card--violet-cyan" href="{{ '/services/custom-apps-software/' | relative_url }}"><span class="home-svc-no">05</span><h3>Custom apps &amp; software</h3><p>Build the tool when off-the-shelf software cannot safely or reliably solve the workflow.</p><span class="svc-cta">Explore →</span></a>
+      <a class="svc-card home-svc-card home-svc-card--gold-cyan" href="{{ '/services/cybersecurity/' | relative_url }}"><span class="home-svc-no">06</span><h3>Cybersecurity &amp; secure infrastructure</h3><p>Identity, permissions, secrets, access boundaries, secure deployment, and technology risk built into the system.</p><span class="svc-cta">Explore →</span></a>
     </div>
-    <a class="section-route" href="{{ '/services/' | relative_url }}">View all 8 services <span>→</span></a>
+    <a class="section-route" href="{{ '/services/' | relative_url }}">View all 8 capabilities <span>→</span></a>
   </div>
 </section>
 
-<section class="home-feature" id="featured-front-desk">
+<section class="home-feature" id="featured-red-team">
   <div class="wrap feature-split">
     <div>
-      <span class="sec-kicker mono rv">Featured system</span>
-      <h2 class="rv d1">An AI front desk that connects the first hello to the next action.</h2>
-      <p class="lead rv d2">Not just a bot that answers. A connected response system can capture the lead, qualify the request, update the CRM, trigger follow-up, and move the customer toward an appointment.</p>
-      <a class="btn-key rv d2" href="{{ '/services/ai-agents-front-desk/' | relative_url }}"><span class="k" aria-hidden="true"></span>Explore AI Front Desk</a>
+      <span class="sec-kicker mono rv">Featured approach</span>
+      <h2 class="rv d1">Don't just prove that the system works. Prove what happens when it doesn't.</h2>
+      <p class="lead rv d2">Our proof systems are built around failure, evidence, remediation, and retesting — so the demo shows more than the happy path.</p>
+      <a class="btn-key rv d2" href="{{ '/red-team/' | relative_url }}"><span class="k" aria-hidden="true"></span>Explore HJT Red Team</a>
     </div>
-    <div class="feature-console" aria-label="AI Front Desk workflow example">
-      <span class="console-kicker mono">Example flow</span>
-      <div class="console-step"><b>01</b><span>Answer</span><small>Voice · chat · form</small></div>
-      <div class="console-step"><b>02</b><span>Qualify</span><small>Intent · urgency · fit</small></div>
-      <div class="console-step"><b>03</b><span>Route</span><small>CRM · pipeline · owner</small></div>
-      <div class="console-step"><b>04</b><span>Follow up</span><small>SMS · email · booking</small></div>
+    <div class="feature-console" aria-label="HJT proof workflow">
+      <span class="console-kicker mono">Proof workflow</span>
+      <div class="console-step"><b>01</b><span>Failure</span><small>What actually broke?</small></div>
+      <div class="console-step"><b>02</b><span>Consequence</span><small>Revenue · reliability · risk · security</small></div>
+      <div class="console-step"><b>03</b><span>Evidence</span><small>Logs · screenshots · test results</small></div>
+      <div class="console-step"><b>04</b><span>Remediate</span><small>Fix the right layer</small></div>
+      <div class="console-step"><b>05</b><span>Retest</span><small>Prove the fix</small></div>
     </div>
   </div>
 </section>
 
 <section class="industries home-work" id="featured-work">
   <div class="wrap">
-    <span class="sec-kicker mono rv">Featured work</span>
-    <h2 class="rv d1">Proof before promises.</h2>
-    <p class="lead rv d2">Client work, demonstrations, and experiments are labeled clearly so you can see what has actually been built.</p>
+    <span class="sec-kicker mono rv">Proof</span>
+    <h2 class="rv d1">Client results, technical projects, and labs stay clearly separated.</h2>
+    <p class="lead rv d2">A synthetic lab is labeled as a synthetic lab. An internal project is labeled as an internal project. A client engagement is labeled as client work. HJT does not manufacture ROI or blur those categories together.</p>
     <div class="ind-grid home-work-grid">
       {% assign sbtlc = site.data.work.client_work | where: "id", "sbtlc" | first %}
-      {% assign workonyou = site.data.work.client_work | where: "id", "workonyou" | first %}
+      {% assign revenue_lab = site.data.work.hjt_projects | where: "id", "revenue-red-team-lab" | first %}
       {% assign afd = site.data.work.demos | where: "id", "ai-front-desk" | first %}
       <div class="ind-card home-work-card"><div class="home-work-thumb">{% if sbtlc.image and sbtlc.image != "" %}<img src="{{ sbtlc.image | relative_url }}" alt="{{ sbtlc.image_alt }}" loading="lazy" width="1200" height="675">{% else %}<span>Screenshot pending</span>{% endif %}</div><span class="work-type">Client work</span><h3>{{ sbtlc.name }}</h3><p>{{ sbtlc.homepage_description }}</p></div>
-      <div class="ind-card home-work-card"><div class="home-work-thumb">{% if workonyou.image and workonyou.image != "" %}<img src="{{ workonyou.image | relative_url }}" alt="{{ workonyou.image_alt }}" loading="lazy" width="1200" height="675">{% else %}<span>Screenshot pending</span>{% endif %}</div><span class="work-type">Client work</span><h3>{{ workonyou.name }}</h3><p>{{ workonyou.homepage_description }}</p></div>
-      <div class="ind-card home-work-card"><div class="home-work-thumb">{% if afd.image and afd.image != "" %}<img src="{{ afd.image | relative_url }}" alt="{{ afd.image_alt }}" loading="lazy" width="1200" height="675">{% else %}<span>Screenshot pending</span>{% endif %}</div><span class="work-type demo">HJT demo</span><h3>{{ afd.name }}</h3><p>{{ afd.homepage_description }}</p></div>
+      <div class="ind-card home-work-card"><div class="home-work-thumb"><span>Lab build in progress</span></div><span class="work-type project">Synthetic HJT lab</span><h3>{{ revenue_lab.name }}</h3><p>{{ revenue_lab.homepage_description }}</p></div>
+      <div class="ind-card home-work-card"><div class="home-work-thumb">{% if afd.image and afd.image != "" %}<img src="{{ afd.image | relative_url }}" alt="{{ afd.image_alt }}" loading="lazy" width="1200" height="675">{% else %}<span>Screenshot pending</span>{% endif %}</div><span class="work-type demo">HJT demo · revalidation</span><h3>{{ afd.name }}</h3><p>{{ afd.homepage_description }}</p></div>
     </div>
-    <a class="section-route" href="{{ '/work/' | relative_url }}">See all work <span>→</span></a>
+    <a class="section-route" href="{{ '/work/' | relative_url }}">See all proof and project status <span>→</span></a>
   </div>
 </section>
 
 <section class="home-process" id="how-we-work">
   <div class="wrap">
     <span class="sec-kicker mono rv">How we work</span>
-    <h2 class="rv d1">Business first. Architecture second. Tools third.</h2>
-    <p class="lead rv d2">The public process is simple. The deeper methodology stays inside the work.</p>
+    <h2 class="rv d1">Understand → Diagnose → Design → Build → Secure → Prove → Improve.</h2>
+    <p class="lead rv d2">The public process stays simple. The deeper internal operating framework stays private.</p>
     <div class="process-grid">
-      <article class="process-card"><span>01</span><h3>Discover</h3><p>Map the business, bottlenecks, people, data, and opportunities.</p></article>
-      <article class="process-card"><span>02</span><h3>Architect</h3><p>Design how the customer, AI, automation, data, and software should connect.</p></article>
-      <article class="process-card"><span>03</span><h3>Build</h3><p>Implement the smallest useful system that proves value.</p></article>
-      <article class="process-card"><span>04</span><h3>Optimize</h3><p>Measure what works, remove friction, and tighten the operation.</p></article>
-      <article class="process-card"><span>05</span><h3>Expand</h3><p>Add capability without rebuilding the business from scratch.</p></article>
+      <article class="process-card"><span>01</span><h3>Understand</h3><p>Map the business, customer journey, people, data, systems, and constraints.</p></article>
+      <article class="process-card"><span>02</span><h3>Diagnose</h3><p>Find the real revenue, reliability, risk, and security problems before choosing a tool.</p></article>
+      <article class="process-card"><span>03</span><h3>Design</h3><p>Architect the smallest system that solves the right problem with clear ownership and boundaries.</p></article>
+      <article class="process-card"><span>04</span><h3>Build</h3><p>Implement the system using the appropriate software, automation, AI, and infrastructure.</p></article>
+      <article class="process-card"><span>05</span><h3>Secure</h3><p>Review permissions, data access, secrets, failure paths, handoffs, and operational risk.</p></article>
+      <article class="process-card"><span>06</span><h3>Prove</h3><p>Test normal operation and meaningful failure conditions, then capture evidence.</p></article>
+      <article class="process-card"><span>07</span><h3>Improve</h3><p>Operate, monitor, learn from real behavior, and harden the next weak point.</p></article>
     </div>
   </div>
 </section>
 
 <section class="founder-strip" id="founder-teaser">
   <div class="wrap founder-split">
-    <div>
-      <span class="sec-kicker mono rv">Founder</span>
-      <h2 class="rv d1">Cortaz “CJ” Calhoun — AI Architect.</h2>
-    </div>
-    <div>
-      <p class="lead rv d2">High John Technology starts with how the business actually works, then architects the technology around it — instead of forcing the business into another tool.</p>
-      <a class="section-route" href="{{ '/about/' | relative_url }}">Read the full story <span>→</span></a>
-    </div>
+    <div><span class="sec-kicker mono rv">Founder</span><h2 class="rv d1">Cortaz “CJ” Calhoun — AI Systems Architect.</h2></div>
+    <div><p class="lead rv d2">High John Technology starts with how the business actually works, identifies where the system is fragile, and architects the technology around the operation — not the other way around.</p><a class="section-route" href="{{ '/about/' | relative_url }}">Read the full story <span>→</span></a></div>
   </div>
 </section>
 
 <section class="final" id="book">
   <div class="wrap">
     <span class="sec-kicker mono rv">Start here</span>
-    <h2 class="rv d1">Find the first system worth fixing.</h2>
-    <p class="final-lead">The $222 Systems Audit maps the operation, identifies the highest-value gaps, and gives you a clear next move before a larger build.</p>
-    {% include cta-book.html label="Book a Systems Audit" service="Systems Audit" extra_class="rv d2" %}
+    <h2 class="rv d1">Let's find what breaks <span class="thin">before your customers do.</span></h2>
+    <p class="final-lead">Start with a Systems Recon: map the operation, identify the highest-value gaps, and decide whether the right next move is remediation, architecture, a build, or no new technology at all.</p>
+    {% include cta-book.html label="Book a Systems Recon — $222" service="Systems Audit" extra_class="rv d2" %}
   </div>
 </section>
-
-<script src="{{ '/assets/js/leak-calculator.js' | relative_url }}"></script>
