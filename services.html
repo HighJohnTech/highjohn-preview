@@ -1,35 +1,83 @@
 ---
 layout: default
 title: "Services | High John Technology"
-description: "Security-led AI systems, automation, custom software, websites, revenue systems, cybersecurity, and ongoing technology support."
+description: "High John Technology focuses on AI systems strategy, intelligent agents, automation and integrations, and cybersecurity with supporting build capabilities when the architecture requires them."
 permalink: /services/
 ---
 
 <section class="contact-sec" id="services-intro">
   <div class="wrap">
-    <span class="sec-kicker mono rv">What HJT builds</span>
-    <h2 class="rv d1">Full technology capability. Security-led architecture.</h2>
-    <p class="lead rv d2">High John Technology is an AI systems engineering and technology firm. The discipline underneath the work stays consistent: understand the business, identify the real failure or opportunity, design the system, build it, secure it, prove it, and improve it.</p>
+    <span class="sec-kicker mono rv">Core HJT services</span>
+    <h2 class="rv d1">Four ways HJT enters the system.</h2>
+    <p class="lead rv d2">High John Technology is a security-led AI systems engineering firm. We lead with the work that defines the architecture: strategy, intelligent systems, automation and integration, and secure infrastructure. Websites, custom software, and revenue infrastructure remain available when the system actually requires them.</p>
   </div>
 </section>
 
 <section class="standalone" id="services-grid" style="padding-top:0;">
   <div class="wrap">
+    <span class="sec-kicker mono rv">Core services</span>
     <div class="svc-grid rv d2">
-      {% for svc in site.data.services %}
       <div class="svc-card">
-        <h3>{{ svc.name }}</h3>
-        <p>{{ svc.blurb }}</p>
-        {% if svc.page_live %}
-        <a class="svc-cta" href="{{ '/services/' | append: svc.slug | append: '/' | relative_url }}">→ Learn more</a>
-        {% else %}
-        {% include cta-book.html class="svc-cta" label=svc.cta_label service=svc.param icon=false %}
-        {% endif %}
+        <h3>AI consulting &amp; systems strategy</h3>
+        <p>Assess the business, map the operating system, identify where AI creates leverage or risk, and define what is worth building before tools are selected.</p>
+        <a class="svc-cta" href="{{ '/services/ai-consulting/' | relative_url }}">→ Learn more</a>
       </div>
-      {% endfor %}
+      <div class="svc-card">
+        <h3>AI agents &amp; intelligent systems</h3>
+        <p>Design voice, chat, internal, and tool-using agent systems around approved knowledge, scoped permissions, human escalation, data boundaries, logging, and failure handling.</p>
+        <a class="svc-cta" href="{{ '/services/ai-agents-front-desk/' | relative_url }}">→ Learn more</a>
+      </div>
+      <div class="svc-card">
+        <h3>Automation, CRM &amp; integrations</h3>
+        <p>Connect workflows, CRM, APIs, lead pipelines, ownership, validation, alerts, follow-up, and recovery paths so the business does not depend on a perfect happy path.</p>
+        <a class="svc-cta" href="{{ '/services/automation-crm/' | relative_url }}">→ Learn more</a>
+      </div>
+      <div class="svc-card">
+        <h3>Cybersecurity &amp; secure infrastructure</h3>
+        <p>Build identity, permissions, secrets, access boundaries, secure deployment, AI-agent controls, and technology-risk reduction into the system from the architecture stage.</p>
+        <a class="svc-cta" href="{{ '/services/cybersecurity/' | relative_url }}">→ Learn more</a>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="custom-note rv" style="margin-top:36px;">
+<section class="standalone" id="supporting-build-capabilities">
+  <div class="wrap">
+    <span class="sec-kicker mono rv">Supporting build capabilities</span>
+    <h2 class="rv d1">Built when the architecture requires them.</h2>
+    <p class="lead rv d2">These are not separate directions for the company. They are build capabilities HJT can bring into a larger system when the customer journey, operating workflow, or technical architecture needs them.</p>
+    <div class="svc-grid rv d2">
+      <div class="svc-card">
+        <h3>Web &amp; digital experience</h3>
+        <p>Customer-facing websites and digital experiences that support positioning, conversion, lead capture, integrations, data handling, and the reliability of what happens after someone clicks submit.</p>
+        <a class="svc-cta" href="{{ '/services/web-design-development/' | relative_url }}">→ Explore capability</a>
+      </div>
+      <div class="svc-card">
+        <h3>Custom software &amp; applications</h3>
+        <p>Internal tools, dashboards, portals, and API-connected applications when an off-the-shelf product cannot safely or reliably support the required workflow.</p>
+        <a class="svc-cta" href="{{ '/services/custom-apps-software/' | relative_url }}">→ Explore capability</a>
+      </div>
+      <div class="svc-card">
+        <h3>Revenue &amp; growth infrastructure</h3>
+        <p>Funnels, forms, attribution, conversion tracking, lead routing, lifecycle automation, and revenue operations when those layers are part of the larger system HJT is designing or repairing.</p>
+        <a class="svc-cta" href="{{ '/services/marketing-revenue-systems/' | relative_url }}">→ Explore capability</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="standalone" id="ongoing-engineering">
+  <div class="wrap">
+    <span class="sec-kicker mono rv">After deployment</span>
+    <h2 class="rv d1">Ongoing engineering when the system needs a standing owner.</h2>
+    <p class="lead rv d2">After an assessment or implementation, HJT can stay involved to monitor systems, maintain integrations, review permissions, improve reliability, test changes, remediate failures, and harden the next weak point. This is an engagement model, not a fifth core service.</p>
+    <a class="section-route" href="{{ '/services/technology-partnership/' | relative_url }}">Explore Ongoing Engineering <span>→</span></a>
+  </div>
+</section>
+
+<section class="standalone" id="before-build">
+  <div class="wrap">
+    <div class="custom-note rv">
       <p><strong>Before a build:</strong> HJT can run a Systems Architecture Assessment, Revenue Red Team, or separately authorized AI / Systems Red Team to identify what is actually failing before more technology is added.</p>
       <a class="svc-cta" href="{{ '/systems-audit/' | relative_url }}">→ Explore the assessment</a>
       <a class="svc-cta" href="{{ '/red-team/' | relative_url }}">→ Explore HJT Red Team</a>
@@ -39,7 +87,7 @@ permalink: /services/
 
 <section class="final" id="services-final">
   <div class="wrap">
-    <span class="sec-kicker mono rv">Not sure which capability you need?</span>
+    <span class="sec-kicker mono rv">Not sure where your problem belongs?</span>
     <h2 class="rv d1">Start with <span class="thin">fit and scope.</span></h2>
     <p class="final-lead">Use the Technology Fit Call to confirm that the problem belongs in HJT's lane. When deeper work is justified, HJT scopes the assessment or engineering engagement around the systems, evidence, access, risk, and business outcome involved.</p>
     {% include fit-call-cta.html label="Book a Technology Fit Call" %}
