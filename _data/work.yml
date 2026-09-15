@@ -82,18 +82,18 @@ hjt_projects:
     featured: true
   - id: oidc-pipeline
     name: "Secure AWS Pipeline with GitHub Actions & OIDC"
-    type: "hjt_project"
-    status: "in_development"
+    type: "hjt_implementation"
+    status: "completed"
     preview_url: ""
-    github_url: ""
-    category: "Cloud Security · CI/CD · Identity"
-    description: "HJT technical project implementing GitHub Actions to AWS authentication with OpenID Connect so CI/CD can use short-lived federated identity instead of long-lived cloud access keys."
-    homepage_description: "OIDC-based AWS CI/CD security project in development."
-    supporting_line: "Status remains In Development until the deployment, trust policy, least-privilege validation, documentation, and test evidence are complete."
-    image: ""
+    github_url: "https://github.com/HighJohnTech/aws-github-oidc-secure-pipeline"
+    category: "Cloud Security · DevSecOps · Identity"
+    description: "Completed AWS deployment pipeline using GitHub Actions OIDC, temporary AWS STS credentials, repository and branch-restricted IAM trust, and scoped deployment permissions. Terraform provisions the infrastructure; encrypted, versioned S3 state and CloudTrail support operation and auditability."
+    homepage_description: "Completed AWS pipeline using temporary credentials, restricted IAM trust, Terraform, and CloudTrail."
+    supporting_line: "HJT implementation adapted from Damien Burks's LinkedIn Learning course starter. Repository documentation records successful authentication, Terraform deployment, and browser validation, with security-model, troubleshooting, and teardown documentation."
+    image: "oidc-architecture"
     image_alt: ""
-    cta_label: ""
-    featured: false
+    cta_label: "View implementation"
+    featured: true
   - id: snapmagnet
     name: "SnapMagnet"
     type: "hjt_app"
