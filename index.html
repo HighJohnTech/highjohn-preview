@@ -100,6 +100,7 @@ description: "High John Technology is a security-led AI systems engineering comp
       <div class="ind-card home-work-card"><div class="home-work-thumb">{% if workonyou.image and workonyou.image != "" %}<img src="{{ workonyou.image | relative_url }}" alt="{{ workonyou.image_alt }}" loading="lazy" width="1200" height="675">{% else %}<span>Screenshot pending</span>{% endif %}</div><span class="work-type">Client work</span><h3>{{ workonyou.name }}</h3><p>{{ workonyou.homepage_description }}</p></div>
       <div class="ind-card home-work-card"><div class="home-work-thumb">{% if afd.image and afd.image != "" %}<img src="{{ afd.image | relative_url }}" alt="{{ afd.image_alt }}" loading="lazy" width="1200" height="675">{% else %}<span>Screenshot pending</span>{% endif %}</div><span class="work-type demo">HJT demo</span><h3>{{ afd.name }}</h3><p>{{ afd.homepage_description }}</p></div>
     </div>
+    <div class="custom-note rv" style="margin-top:28px;"><p><strong>Completed security implementation: AWS + GitHub Actions OIDC.</strong> Temporary cloud credentials, repository and branch-restricted trust, scoped IAM permissions, Terraform deployment, and CloudTrail audit evidence.</p><a class="svc-cta" href="{{ '/work/#hjt-projects' | relative_url }}">See the OIDC project and source documentation →</a></div>
     <a class="section-route" href="{{ '/work/' | relative_url }}">See all work <span>→</span></a>
   </div>
 </section>
