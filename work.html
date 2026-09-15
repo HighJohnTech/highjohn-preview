@@ -41,9 +41,12 @@ permalink: /work/
       <div class="work-card">
         <div class="work-card-visual">
           <div class="work-card-chrome"><span class="work-card-chrome-dot"></span><span class="work-card-chrome-dot"></span><span class="work-card-chrome-dot"></span><span class="work-card-chrome-domain">{{ p.category }}</span></div>
+          {% if p.status == "completed" %}<span class="work-card-status">Completed</span>{% endif %}
           {% if p.status == "in_development" %}<span class="work-card-status">In Development</span>{% endif %}
           {% if p.status == "built_not_validated" %}<span class="work-card-status">Built · Validation Pending</span>{% endif %}
-          {% if p.image == "abstract-diagram" %}
+          {% if p.image == "oidc-architecture" %}
+          <div class="work-diagram" aria-label="OIDC pipeline architecture"><div class="work-diagram-node">GitHub Actions + OIDC</div><div class="work-diagram-arrow">↓</div><div class="work-diagram-node">AWS STS · Temporary credentials</div><div class="work-diagram-arrow">↓</div><div class="work-diagram-node">Scoped IAM + Terraform</div><div class="work-diagram-arrow">↓</div><div class="work-diagram-node">AWS infrastructure · CloudTrail</div></div>
+          {% elsif p.image == "abstract-diagram" %}
           <div class="work-diagram"><div class="work-diagram-node">Business Input</div><div class="work-diagram-arrow">↓</div><div class="work-diagram-node">AI Orchestration</div><div class="work-diagram-arrow">↓</div><div class="work-diagram-node">Specialized Agents</div><div class="work-diagram-arrow">↓</div><div class="work-diagram-node">Tools + Automation</div><div class="work-diagram-arrow">↓</div><div class="work-diagram-node">Business Output</div></div>
           {% elsif p.image and p.image != "" %}<img src="{{ p.image | relative_url }}" alt="{{ p.image_alt }}" loading="lazy" width="800" height="500">{% else %}<div class="work-card-visual-placeholder"><span>Evidence asset pending</span></div>{% endif %}
         </div>
